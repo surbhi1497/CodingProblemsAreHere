@@ -2,6 +2,7 @@ package Arrays;
 /*
 Given an array of size n integers, are there three elements a,b,c in array that a+b+c=0?
 Find all unique triplets in array.
+Time complexity : O(n)
  */
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -44,6 +45,7 @@ public class SumToZero {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter number of test cases ");
         int testNumber = Integer.parseInt(bufferedReader.readLine());
+        for(int t=0;t<testNumber;t++) {
         System.out.println("Enter number of elements in array ");
         int numberOfElement = Integer.parseInt(bufferedReader.readLine());
         System.out.println("Enter the elements of array ");
@@ -52,7 +54,8 @@ public class SumToZero {
         for (int i = 0; i < numberOfElement; i++) {
             array[i] = Integer.parseInt(temp[i]);
         }
-        sumToZero(array, numberOfElement);
 
+        sumToZero(array, numberOfElement);
+    }
     }
 }

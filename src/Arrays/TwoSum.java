@@ -1,6 +1,7 @@
 package Arrays;
 /* Given an array of integers, return indices of the two numbers such that they add up to a specific target.
-*/
+Time complexity : O(n)
+* */
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -32,18 +33,20 @@ public class TwoSum {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter number of test cases ");
         int testNumber = Integer.parseInt(bufferedReader.readLine());
-        System.out.println("Enter number of elements in array ");
-        int numberOfElement = Integer.parseInt(bufferedReader.readLine());
-        System.out.println("Enter the elements of array ");
-        String[] temp = bufferedReader.readLine().split(" ");
-        System.out.println("Enter the desired output ");
-        int desiredOutput = Integer.parseInt(bufferedReader.readLine());
-        int[] array = new int[numberOfElement];
-        for(int i=0;i<numberOfElement;i++){
-            array[i] = Integer.parseInt(temp[i]);
-        }
-        twoSum(array, numberOfElement, desiredOutput);
+        for(int t=0;t<testNumber;t++) {
+            System.out.println("Enter number of elements in array ");
+            int numberOfElement = Integer.parseInt(bufferedReader.readLine());
+            System.out.println("Enter the elements of array ");
+            String[] temp = bufferedReader.readLine().split(" ");
+            System.out.println("Enter the desired output ");
+            int desiredOutput = Integer.parseInt(bufferedReader.readLine());
+            int[] array = new int[numberOfElement];
+            for (int i = 0; i < numberOfElement; i++) {
+                array[i] = Integer.parseInt(temp[i]);
+            }
 
+            twoSum(array, numberOfElement, desiredOutput);
+        }
 
     }
 
