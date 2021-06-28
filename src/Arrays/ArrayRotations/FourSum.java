@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.ArrayRotations;
 /*
 An array is given , find if a+b+c+d=target exist, target is the value we want the 4 digits to sum upto.
  Time complexity : O(n)

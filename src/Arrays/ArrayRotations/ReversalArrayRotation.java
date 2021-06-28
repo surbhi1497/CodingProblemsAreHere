@@ -1,6 +1,5 @@
-package Arrays;
+package Arrays.ArrayRotations;
 
-import java.awt.desktop.PreferencesEvent;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

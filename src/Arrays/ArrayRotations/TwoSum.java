@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.ArrayRotations;
 /* Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 Time complexity : O(n)
 * */

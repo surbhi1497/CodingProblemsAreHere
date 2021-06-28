@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.ArrayRotations;
 /*
 Given an array that is sorted and then rotated around an unknown point.
 Find if the array has a pair with a given sum ‘x’, if yes then count also of such pairs.

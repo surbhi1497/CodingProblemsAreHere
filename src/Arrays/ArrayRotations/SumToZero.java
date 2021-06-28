@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.ArrayRotations;
 /*
 Given an array of size n integers, are there three elements a,b,c in array that a+b+c=0?
 Find all unique triplets in array.

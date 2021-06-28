@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.ArrayRotations;
 
 import java.io.BufferedReader;
 import java.io.IOException;
