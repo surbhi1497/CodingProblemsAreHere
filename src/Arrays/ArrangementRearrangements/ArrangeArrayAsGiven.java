@@ -9,6 +9,7 @@ package Arrays.ArrangementRearrangements;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class ArrangeArrayAsGiven {
     private static void firstApproach(int[] array, int sizeOfArray){
@@ -16,8 +17,7 @@ public class ArrangeArrayAsGiven {
         for(int i =0;i>sizeOfArray;i++){
             temp[array[i]] = i;
         }
-        for(int i=0;i<sizeOfArray;i++)
-            array[i] = temp[i];
+        Arrays.copyOf(array, sizeOfArray);
         for (int i=0;i<sizeOfArray;i++)
             System.out.print(array[i]+" ");
         System.out.println();
