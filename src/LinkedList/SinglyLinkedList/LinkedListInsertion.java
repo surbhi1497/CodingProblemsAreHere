@@ -46,8 +46,8 @@ public class LinkedListInsertion extends LinkedList{
         linkedListInsertion.addNodeAtFirst(2);
         linkedListInsertion.addNodeAtLast(5);
         linkedListInsertion.addNodeAfterGivenNode(linkedList.head,  3);
-        linkedListInsertion.addNodeAfterGivenNode(linkedList.head.next, 4);
         linkedListInsertion.addNodeAtLast(6);
+        linkedListInsertion.addNodeAfterGivenNode(linkedList.head.next, 4);
         linkedListInsertion.addNodeAtFirst(1);
 
     }
