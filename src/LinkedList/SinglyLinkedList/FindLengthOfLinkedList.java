@@ -1,6 +1,7 @@
 package LinkedList.SinglyLinkedList;
 
-public class FindLengthOfLinkedList extends LinkedList{
+public class FindLengthOfLinkedList extends Node{
+    Node head;
     void push(int new_data){
         Node temp = new Node(new_data);
         temp.next = head;

@@ -1,8 +1,10 @@
 package LinkedList.SinglyLinkedList;
 
-public class LinkedListDeletion extends LinkedList{
+public class LinkedListDeletion extends Node{
+    Node head;
+
     public Node deleteGivenKey(int key){
-        LinkedList.Node temp = head, prev = null;
+        Node temp = head, prev = null;
         if(temp!=null && temp.data==key){
             head = head.next;
             return head;
@@ -67,13 +69,20 @@ public class LinkedListDeletion extends LinkedList{
         return head;
     }
 
-    public void printList(){
+    public void printList(Node head){
         Node node = head;
         while(node!=null){
             System.out.println(node.data);
             node = node.next;
         }
     }
+
+    public void push(int new_data){
+        Node new_node = new Node(new_data);
+        new_node.next = head;
+        head = new_node;
+    }
+
 
     public static void main(String[] args){
         new LinkedListInsertion().pushIntoLL();
@@ -83,6 +92,6 @@ public class LinkedListDeletion extends LinkedList{
         linkedListDeletion.deleteStartNode();
         linkedListDeletion.deleteKeyAtPosition(3);
         linkedListDeletion.deleteNodeAtLast();
-        linkedListDeletion.printList();
+        linkedListDeletion.printList(linkedListDeletion.head);
     }
 }

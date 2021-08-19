@@ -1,6 +1,7 @@
 package LinkedList.SinglyLinkedList;
 
-public class DeleteLinkedList extends LinkedList{
+public class DeleteLinkedList extends Node{
+    Node head;
 
     void deleteList(){
         head = null;
@@ -12,6 +13,19 @@ public class DeleteLinkedList extends LinkedList{
         head = new_node;
     }
 
+    public void printList() {
+        if(head==null){
+            System.out.println("list is null");
+            return;
+        }
+        Node node = head;
+        while (node != null) {
+            System.out.println(node.data);
+            node = node.next;
+        }
+    }
+
+
     public static void main(String[] args){
         DeleteLinkedList deleteLinkedList =
                 new DeleteLinkedList();
@@ -21,12 +35,11 @@ public class DeleteLinkedList extends LinkedList{
         deleteLinkedList.push(4);
         deleteLinkedList.push(5);
 
-     LinkedListInsertion linkedListInsertion = new LinkedListInsertion();
-//        linkedListInsertion.pushIntoLL();
-//        System.out.println("the linked list looks like " );
-        linkedListInsertion.printList();
+
+        System.out.println("the linked list looks like " );
+        deleteLinkedList.printList();
 
         deleteLinkedList.deleteList();
-        linkedListInsertion.printList();
+        deleteLinkedList.printList();
     }
 }

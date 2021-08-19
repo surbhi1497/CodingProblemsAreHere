@@ -1,6 +1,7 @@
 package LinkedList.SinglyLinkedList;
 
-public class LinkedListInsertion extends LinkedList{
+public class LinkedListInsertion extends Node{
+    Node head;
     public Node addNodeAtFirst(int new_data){
         Node newNode = new Node(new_data);
         newNode.next = head;
@@ -31,7 +32,7 @@ public class LinkedListInsertion extends LinkedList{
         return head;
     }
 
-    public void printList(){
+    public void printList(Node head){
         Node node = head;
         while(node!=null){
             System.out.println(node.data);
@@ -40,14 +41,12 @@ public class LinkedListInsertion extends LinkedList{
     }
 
     public void pushIntoLL(){
-        LinkedListInsertion linkedListInsertion =
-                new LinkedListInsertion();
-        LinkedList linkedList = new LinkedList();
+        LinkedListInsertion linkedListInsertion = new LinkedListInsertion();
         linkedListInsertion.addNodeAtFirst(2);
         linkedListInsertion.addNodeAtLast(5);
-        linkedListInsertion.addNodeAfterGivenNode(linkedList.head,  3);
+        linkedListInsertion.addNodeAfterGivenNode(linkedListInsertion.head,  3);
         linkedListInsertion.addNodeAtLast(6);
-        linkedListInsertion.addNodeAfterGivenNode(linkedList.head.next, 4);
+        linkedListInsertion.addNodeAfterGivenNode(linkedListInsertion.head.next, 4);
         linkedListInsertion.addNodeAtFirst(1);
 
     }
@@ -56,6 +55,6 @@ public class LinkedListInsertion extends LinkedList{
         LinkedListInsertion linkedListInsertion =
                 new LinkedListInsertion();
         linkedListInsertion.pushIntoLL();
-        linkedListInsertion.printList();
+        linkedListInsertion.printList(linkedListInsertion.head);
     }
 }
