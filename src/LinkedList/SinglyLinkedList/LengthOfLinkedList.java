@@ -1,6 +1,6 @@
 package LinkedList.SinglyLinkedList;
 
-public class FindLengthOfLinkedList extends Node{
+public class LengthOfLinkedList extends Node{
     Node head;
     void push(int new_data){
         Node temp = new Node(new_data);
@@ -31,14 +31,14 @@ public class FindLengthOfLinkedList extends Node{
     }
 
     public static void main(String[] args){
-        FindLengthOfLinkedList findLengthOfLinkedList =
-                new FindLengthOfLinkedList();
-        findLengthOfLinkedList.push(1);
-        findLengthOfLinkedList.push(2);
-        findLengthOfLinkedList.push(3);
-        findLengthOfLinkedList.push(4);
-        findLengthOfLinkedList.push(5);
-        System.out.println("iterative count is "+findLengthOfLinkedList.getIterativeCount());
-        System.out.println("recursive count is "+findLengthOfLinkedList.getRecursiveCount());
+        LengthOfLinkedList lengthOfLinkedList =
+                new LengthOfLinkedList();
+        lengthOfLinkedList.push(1);
+        lengthOfLinkedList.push(2);
+        lengthOfLinkedList.push(3);
+        lengthOfLinkedList.push(4);
+        lengthOfLinkedList.push(5);
+        System.out.println("iterative count is "+ lengthOfLinkedList.getIterativeCount());
+        System.out.println("recursive count is "+ lengthOfLinkedList.getRecursiveCount());
     }
 }

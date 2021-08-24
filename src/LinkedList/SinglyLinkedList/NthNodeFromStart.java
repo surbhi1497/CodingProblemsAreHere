@@ -1,6 +1,6 @@
 package LinkedList.SinglyLinkedList;
 
-public class GetNthNodeFromStart extends Node{
+public class NthNodeFromStart extends Node{
     Node head;
     int getNthNode(int n){
         Node temp = head;
@@ -31,17 +31,17 @@ public class GetNthNodeFromStart extends Node{
     }
 
     public static void main(String[] args){
-        GetNthNodeFromStart getNthNodeFromStart = new GetNthNodeFromStart();
-        getNthNodeFromStart.push(2);
-        getNthNodeFromStart.push(3);
-        getNthNodeFromStart.push(6);
-        getNthNodeFromStart.push(1);
-        getNthNodeFromStart.push(4);
-        getNthNodeFromStart.push(5);
-        getNthNodeFromStart.printList();
-        System.out.println(getNthNodeFromStart.getNthNode(3));
-        System.out.println(getNthNodeFromStart.getNthNode(1));
-        System.out.println(getNthNodeFromStart.getNthNode(4));
+        NthNodeFromStart nthNodeFromStart = new NthNodeFromStart();
+        nthNodeFromStart.push(2);
+        nthNodeFromStart.push(3);
+        nthNodeFromStart.push(6);
+        nthNodeFromStart.push(1);
+        nthNodeFromStart.push(4);
+        nthNodeFromStart.push(5);
+        nthNodeFromStart.printList();
+        System.out.println(nthNodeFromStart.getNthNode(3));
+        System.out.println(nthNodeFromStart.getNthNode(1));
+        System.out.println(nthNodeFromStart.getNthNode(4));
 
     }
 }
