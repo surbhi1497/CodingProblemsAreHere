@@ -7,11 +7,11 @@ public class Node{
         Node(){
 
         }
-        Node(int d){
+        public Node(int d){
             data = d;
             next = null;
         }
-        Node(String d){
+        public Node(String d){
             string = d;
             next = null;
         }
