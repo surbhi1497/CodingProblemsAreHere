@@ -1,6 +1,8 @@
-package selfPractise.Arrays.TopQuestions;
-import java.io.*;
-import java.util.*;
+package DSA450.Arrays;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class MinimizeTheHeight {
         public static void main(String[] args) throws Exception {
