@@ -1,4 +1,4 @@
-package selfPractise.Arrays.TopQuestions;
+package DSA450.Arrays;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Collections;
+
 class Node{
     int data;
     Node prev;

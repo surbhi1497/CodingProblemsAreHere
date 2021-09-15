@@ -23,10 +23,10 @@ public class AlternatePosnNegElement {
             }
         }
 
-        static void rearrange(int arr[], int n) {
+        static void rearrange(int[] arr, int n) {
             // code here
-            ArrayList<Integer> pos = new ArrayList<Integer>();
-            ArrayList<Integer> neg = new ArrayList<Integer>();
+            ArrayList<Integer> pos = new ArrayList<>();
+            ArrayList<Integer> neg = new ArrayList<>();
             for(int i=0;i<n;i++){
                 if(arr[i]>=0)
                     pos.add(arr[i]);
